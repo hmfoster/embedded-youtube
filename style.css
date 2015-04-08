@@ -233,6 +233,7 @@ h1{
 	width: 130px;
 	vertical-align: middle;
 	margin: 15px 0;
+	display: block;
 
 }
 .comments button img{
@@ -241,7 +242,22 @@ h1{
 	padding: 0;
 	vertical-align: middle;
 }
-*/aside{
+
+.comment img{
+	display: inline;
+	float: left;
+	padding: 0;
+}
+.description{
+	width: 530px;
+	display: inline;
+	float: right;
+	padding: 0 30px 0 0;
+}
+.comment{
+	padding: 0
+}
+aside{
 	margin: 20px 0;
 	width: 416px;
 	float: right;
