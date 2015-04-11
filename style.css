@@ -4,69 +4,70 @@ body{
 	color: #222;
 	font-family: Arial, sans-serif;
 }
-strong{
+strong, h3, button, .video_info a, a.more, a.reply, h4{
 	font-weight: bold;
 }
-body p{
+body p, h3, .video_info a, #subscribe, .comments a, h4{
 	font-size: 13px;
 }
 
-h3{
-	color: #222;
-	font-size: 13px;
-	font-weight: bold;
+header, footer, section, aside{
+	background-color: #fff;
 }
-
+header, .about p, ul, li.first, .details{
+	border-bottom: solid 1px #D3D3D3;
+}
+.left, .right, form, .google, .subscribers, .video_actions a, 
+.comment img, .description, .description h3, h4, .more_info h3
+{
+	display: inline;
+}
 header{
 	width: 100%;
 	min-width: 1100px;
 	padding: 10px 25px;
 	position: fixed;
 	top: 0;
-	background-color: #fff;
-	border-bottom: solid 1px #D3D3D3;
 }
 
 footer{
 	padding: 14px 40px 25px 30px;
-	background-color: #fff;
 	width: 100%;
 	border-top: solid 1px #D3D3D3;
 	clear: both;
 }
 
-.left{
+.left, form, .video, #user_profile, .main_info, .comment img,
+.next h3{
 	float: left;
-	display: inline;
 }
-.left img{
+.left img, #subscribe, .subscribers, .video_actions img, 
+.comments button img{
 	vertical-align: middle;
 }
 form{
 	margin-left: 80px;
-	float: left;
-	display: inline;
+}
+input, .google, .google button,.details button{
+	vertical-align: top;
 }
 input{
 	font-size: 18px;
 	min-width: 590px;
 	line-height: 25px;
-	margin-right: 0;
 	border:solid 1px #ddd;
 	box-shadow: inset 0 1px 1px #ddd;
 	margin: 0;
-	padding-right: 0;
-	vertical-align: top;
 }
+button, .subscribers{
+	background-color: #f8f8f8;
+	border: solid 1px #ddd;
 
+}
 button{
 	margin-left: -7px;
-	background-color: #f8f8f8;
 	height: 29px;
 	width: 65px;
-	border: solid 1px #ddd;
-	font-weight: bold;
-	color: #222; 
 	border-radius: 2px;
 }
 
@@ -74,14 +75,12 @@ button:hover{
 	background-color: #eee;
 	border-color: #ccc;
 }
-.google{
+.google, .likes, .right, .description, aside, .next h4,
+.next img{
 	float: right;
-	margin-right: 20px;
-	display: inline;
-	vertical-align: top;
 }
-.google button{
-	vertical-align: top;
+.google{
+	margin-right: 20px;
 }
 
 .google img{
@@ -100,138 +99,111 @@ main{
 }
 
 .video{
-	float: left;
 	padding-top:10px;
 }
 
-iframe{
-	margin: 10px 0;
+iframe, section, #subscribe, li{
+	margin-top: 10px;
 }
 
 section{
 	overflow: hidden;
 	padding: 20px 10px 10px 15px;
-	background-color: #fff;
-	margin: 10px 0;
 	width: 615px;
 }
 h1{
 	margin-bottom: 13px; 
 }
-#user_profile{
-	float: left;
+#user_profile, .video_actions a, a.reply, .next h4{
 	margin-right: 10px
 }
 
-.video_info a{
+.video_info a, .video_actions a:hover, a.more, .comments a, 
+.more_info a, .next_description, .terms a{
 	text-decoration: none;
-	color: #222;
-	font-size: 13px;
-	font-weight: bold;
-	vertical-align: top;
 }
-.video_info a:hover{
+.video_info a:hover, .comments a:hover, a.time:hover,
+.more_info a:hover, .terms a:hover{
 	text-decoration: underline;
 }
-.main_info{
+.main-info, .main_info, .main_info h3, ul, li.first, .details{
 	padding-bottom: 10px;
+}
+.main_info{
 	border-bottom: solid 1px #ddd;
 	width: 80%;
-	float: left;
-}
-.main_info h3{
-	padding-bottom: 10px;
 }
 #subscribe{
 	background-color: #E62117;
 	color: #fff;
-	text-decoration: none;
-	font-size: 13px;
 	padding: 5px;
-	margin-top: 10px;
-	vertical-align: middle;
+}
+.description h3, #subscribe img{
+	vertical-align: text-bottom;
 }
 #subscribe img{
-	vertical-align: text-bottom;
 	padding-right: 5px;
+}
+.subscribers, .video_actions a, a.more, a.time, a.reply, 
+.next_description p, .details button{
+	font-size: 11px;
 }
 #subscribe:hover{
 	background-color: #CB4437
 }
+.subscribers, a.more, .comments a, h4, .next_description p{
+	color: #777;
+}
 .subscribers {
-	display: inline;
-	font-size: 11px;
-	background-color: #f8f8f8;
 	padding: 5.5px;
 	height: 22px;
-	border: solid 1px #ddd;
-	vertical-align: middle;
 	margin-left: -7px;
-	color: #777;
 }
 .likes {
 	width: 20%;
-	float: right;
 	padding: 11px 0 5px 0;
 	border-bottom: solid 3px #167AC6;
 	text-align: right;
 }
-.likes p {
+.likes p, a.reply:hover{
 	color: #666;
+
+}
+.likes p {
 	font-size: 19px;
-	padding-top:25px;
+	padding-top:15px;
+}
+.video_info	footer, .comments button img, .comment{
+	padding: 0;	
 }
 .video_info footer{
 	border-top: none;
-	padding: 0;
 }
 .video_actions a{
-	display: inline;
-	font-size: 11px;
 	color: #888;
-	margin-right: 10px;
 	vertical-align:middle;
 }
-.video_actions a:hover{
-	text-decoration: none;
-}
 .video_actions img{
-	vertical-align: middle;
 	margin-right: 6px;
-}
-.right{
-	display: inline;;
-	float: right;
 }
 .about p{
 	padding: 3px 0 20px 0;
 	line-height: 1.4;
-	border-bottom: solid 1px #D3D3D3;
+}
+a.more, .comments a{
+	text-transform: uppercase;
+
 }
 a.more{
 	padding-top: 8px;
 	display: block;
-	font-size: 11px;
-	font-weight: bold;
 	text-align: center;
-	color: #777;
-	text-decoration: none;
-	text-transform: uppercase;
 }
 a.more:hover{
 	color: #222;
 }
 .comments{
 	padding-bottom: 200px;
-}
-.comments a{
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #777;
-	font-size: 13px;
-}
-.comments a:hover{
-	text-decoration: underline;
 }
 .comments img{
 	padding-top: 15px;
@@ -245,26 +217,17 @@ a.more:hover{
 .comments button img{
 	width: 20px;
 	height: 20px;
-	padding: 0;
-	vertical-align: middle;
 }
 
 .comment img{
-	display: inline;
-	float: left;
-	vertical-align: top;
 	padding: 8px 7px 0 0;
 }
 .description{
 	width: 525px;
-	display: inline;
-	float: right;
 	padding: 0 30px 0 0;
 }
 .description h3{
-	display: inline;
 	margin-top: 0;
-	vertical-align: text-bottom;
 }
 .description a{
 	text-transform: none;
@@ -274,24 +237,13 @@ a.more:hover{
 	text-decoration:none; 
 }
 a.time{
-	font-size: 11px;
 	color: #999;
 }
-a.time:hover{
-	text-decoration: underline;
-}
 .comment{
-	padding: 0;
 	line-height: 1.2;
 }
 a.reply{
-	font-weight: bold;
 	color: #999;
-	font-size: 11px;
-	margin-right: 10px;
-}
-a.reply:hover{
-	color: #666;
 }
 .description img{
 	float: none;
@@ -301,37 +253,13 @@ a.reply:hover{
 aside{
 	margin: 20px 0 100px 0;
 	width: 391px;
-	float: right;
-	background-color: #fff;
 	overflow: hidden;
 	padding: 20px 15px 10px 15px;
 }
 .next{
 	overflow: hidden;
 }
-.next h3{
-	float: left;
-}
-.next h4{
-	float: right;
-	margin-right: 10px;
-}
-.next img{
-	float: right;
-}
-h4{
-	display: inline;
-	color: #777;
-	font-size: 13px;
-	font-weight: bold;
-}
-ul{
-	padding-bottom: 10px;
-	border-bottom: solid 1px #D3D3D3;
-}
-li{
-	margin-top: 10px;
-}
+
 li img{
 	height: 70px;
 	width: 120px;
@@ -343,44 +271,19 @@ li h3:hover{
 .next_description{
 	width: 263px;
 	float:right;
-	text-decoration: none;
 	line-height: 1.3;
 }
-.next_description p{
-	font-size: 11px;
-	color: #777;
-}
-li.first{
-	border-bottom: solid 1px #D3D3D3;
-	padding-bottom: 10px;
-}
 .details{
-	border-bottom: solid 1px #D3D3D3;
-	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
 .details button{
 	margin: 0 10px;
 	width: auto;
-	font-size: 11px;
 	font-weight: normal;
-	vertical-align: top;
-}
-.more_info h3{
-	display: inline;
 }
 .more_info a{
-	text-decoration: none;
 	padding: 0 5px;
 }
-.terms a{
-	text-decoration: none;
-}
-.more_info a:hover{
+.more_info a:hover, .terms a:hover{
 	color: #167AC6;
-	text-decoration: underline;
-}
-.terms a:hover{
-	color: #167AC6;
-	text-decoration: underline;
 }
